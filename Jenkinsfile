@@ -22,7 +22,7 @@ pipeline {
                 sh 'docker rm devops-container || true'
                 sh 'docker run -d -p 8080:80 --name devops-container devops-demo'
             }
- i       }
+        }
     }
 
     post {
